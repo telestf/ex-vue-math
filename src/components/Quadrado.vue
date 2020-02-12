@@ -1,14 +1,22 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
+  <div class="quadrado">
+    <b-card bg-variant="warning">
+      <h1>Quadrado</h1>
+      <h2>{{ calcula_quadrado(numero) }}</h2>
+    </b-card>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Quadrado',
   props: {
-    msg: String
+    numero: Number
+  },
+  methods: {
+    calcula_quadrado(n){
+      return n**2
+    }
   }
 }
 </script>

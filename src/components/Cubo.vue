@@ -1,14 +1,21 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
+  <div class="cubo">
+    <b-card bg-variant="danger">
+      <h1>Cubo</h1>
+      <h2>{{ calcula_cubo(numero) }}</h2>
+    </b-card>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
   props: {
-    msg: String
+    numero: Number
+  },
+  methods: {
+    calcula_cubo(n){
+      return n**3
+    }
   }
 }
 </script>

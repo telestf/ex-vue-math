@@ -1,17 +1,30 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld msg="Meu primeiro Math App.js"/>
+    <div class="container">
+      <Fatorial :numero="9"/>
+      <Primo :numero="13"/>
+      <Quadrado :numero="2"/>
+      <Cubo :numero="3"/>
+    </div>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import Quadrado from './components/Quadrado.vue'
+import Cubo from './components/Cubo.vue'
+import Fatorial from './components/Fatorial.vue'
+import Primo from './components/Primo.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    HelloWorld,
+    Quadrado,
+    Cubo,
+    Fatorial,
+    Primo
   }
 }
 </script>
@@ -24,5 +37,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
 }
 </style>
