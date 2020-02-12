@@ -3,9 +3,9 @@
     <HelloWorld msg="Meu primeiro Math App.js"/>
     <div class="container">
       <Fatorial :numero="9"/>
-      <Primo :numero="13"/>
-      <Quadrado :numero="2"/>
-      <Cubo :numero="3"/>
+      <Primo :numero="9"/>
+      <Quadrado :numero="9"/>
+      <Cubo :numero="9"/>
     </div>
   </div>
 </template>
